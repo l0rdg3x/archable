@@ -34,6 +34,7 @@ spacecadetpinball-bin
 spotube-bin
 steam
 syncthing
+tesseract-data-ita
 unrar
 unzip
 upscayl-bin
