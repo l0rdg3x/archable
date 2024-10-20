@@ -1,7 +1,6 @@
 bitwarden
 blanket
 brave-bin
-btrfs-assistant
 discord
 dolphin-plugins
 fastfetch
@@ -29,12 +28,13 @@ rawtherapee
 remmina
 rpi-imager
 signal-desktop
-snap-pac
 spacecadetpinball-bin
 spotube-bin
 steam
 syncthing
 tesseract-data-ita
+timeshift
+timeshift-autosnap
 unrar
 unzip
 upscayl-bin
