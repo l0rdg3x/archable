@@ -98,7 +98,7 @@ install_nvidia() {
 }
 
 install_virt() {
-    yay -S --needed --noconfirm qemu-full qemu-img libvirt virt-install virt-manager virt-viewer edk2-ovmf swtpm guestfs-tools libosinfo
+    yay -S --needed --noconfirm qemu-full qemu-img libvirt virt-install virt-manager virt-viewer edk2-ovmf swtpm guestfs-tools libosinfo dnsmasq
     sudo usermod -aG libvirt $(whoami)
     sudo sed -i 's/#unix_sock_group = "libvirt"/unix_sock_group = "libvirt"/' /etc/libvirt/libvirtd.conf
     sudo sed -i 's/#unix_sock_ro_perms = "0777"/unix_sock_ro_perms = "0777"/' /etc/libvirt/libvirtd.conf
@@ -106,6 +106,8 @@ install_virt() {
     sudo setfacl -R -b /var/lib/libvirt/images/
     sudo setfacl -R -m u:$(whoami):rwX /var/lib/libvirt/images/
     sudo setfacl -m d:u:$(whoami):rwx /var/lib/libvirt/images/
+    sudo virsh net-start default
+    sudo virsh net-autostart default
     sudo systemctl enable --now libvirtd
 }
 
