@@ -78,6 +78,7 @@ install_software() {
     if [ -f system-packages.txt ]; then
         yay -S --needed --noconfirm $(cat system-packages.txt)
         sudo systemctl enable --now cronie
+        systemctl --user enable syncthing.service
     fi
 }
 
@@ -94,7 +95,7 @@ install_oh_my_zsh() {
 # Function to install Nvidia drivers
 install_nvidia() {
     echo "Installing Nvidia Driver"
-    yay -S --needed --noconfirm nvidia
+    yay -S --needed --noconfirm nvidia-dkms
 }
 
 install_virt() {
@@ -119,6 +120,7 @@ install_tlp() {
 install_openrazer() {
     yay -S --needed --noconfirm openrazer-daemon polychromatic
     sudo gpasswd -a $(whoami) plugdev
+    systemctl --user enable openrazer-daemon.service
 }
 
 install_rustdesk() {
