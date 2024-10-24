@@ -77,8 +77,11 @@ install_software() {
 
     if [ -f system-packages.txt ]; then
         yay -S --needed --noconfirm $(cat system-packages.txt)
+        sudo systemctl enable --now bluetooth.service
+        sudo systemctl enable --now cups.service
         sudo systemctl enable --now cronie
         systemctl --user enable syncthing.service
+        sudo grub-mkconfig -o /boot/grub/grub.cfg
     fi
 }
 

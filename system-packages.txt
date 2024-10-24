@@ -1,8 +1,13 @@
 bitwarden
 blanket
+bluez
+bluez-utils
 brave-bin
+cups
 discord
 dolphin-plugins
+epson-inkjet-printer-escpr
+epson-inkjet-printer-escpr2
 fastfetch
 ffmpeg
 gamemode
@@ -18,6 +23,7 @@ mangohud
 minecraft-launcher
 nextcloud-client
 nmap
+opensc
 p7zip
 pacseek
 picard
@@ -27,11 +33,14 @@ qbittorrent
 rawtherapee
 remmina
 rpi-imager
+sane
+sane-airscan
 signal-desktop
 spacecadetpinball-bin
 spotube-bin
 steam
 syncthing
+system-config-printer
 tesseract-data-ita
 timeshift
 timeshift-autosnap
