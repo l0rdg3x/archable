@@ -2,7 +2,6 @@ bitwarden
 blanket
 bluez
 bluez-utils
-brave-bin
 cups
 discord
 dolphin-plugins
@@ -19,6 +18,7 @@ htop
 kde-applications-meta
 libreoffice-fresh
 libreoffice-fresh-it
+librewolf-bin
 mangohud
 minecraft-launcher
 nextcloud-client
