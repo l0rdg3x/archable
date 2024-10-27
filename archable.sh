@@ -76,7 +76,6 @@ install_software() {
     echo "Installing Software"
 
     if [ -f system-packages.txt ]; then
-        gpg --keyserver hkps://keyserver.ubuntu.com:443 --search-keys 662E3CDD6FE329002D0CA5BB40339DD82B12EF16
         yay -S --needed --noconfirm $(cat system-packages.txt)
         sudo systemctl enable --now bluetooth.service
         sudo systemctl enable --now cups.service
