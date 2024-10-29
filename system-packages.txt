@@ -10,6 +10,7 @@ epson-inkjet-printer-escpr
 epson-inkjet-printer-escpr2
 fastfetch
 ffmpeg
+freerdp
 gamemode
 gamescope
 gimp
