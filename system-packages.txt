@@ -18,6 +18,7 @@ gparted
 grub-btrfs
 htop
 kde-applications-meta
+kvantum
 libreoffice-fresh
 libreoffice-fresh-it
 mangohud
