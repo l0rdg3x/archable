@@ -88,10 +88,12 @@ install_software() {
 # Function to install Oh-My-Zsh and Starship
 install_oh_my_zsh() {
     echo "Installing Oh-My-Zsh with Starship"
-    yay -S --needed --noconfirm zsh curl util-linux
+    yay -S --needed --noconfirm zsh zsh-autosuggestions zsh-syntax-highlighting curl util-linux
     sh -c "$(curl -fsSL $OH_MY_ZSH_URL)" "" --unattended
     chsh -s "$(which zsh)"
     curl -sS https://starship.rs/install.sh | sh
+    echo 'source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+    echo 'source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
     echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 }
 
