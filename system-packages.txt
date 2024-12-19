@@ -52,5 +52,5 @@ unzip
 upscayl-bin
 vlc
 vorta
-wireshark
+wireshark-qt
 zed

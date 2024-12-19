@@ -80,6 +80,7 @@ install_software() {
         sudo systemctl enable --now bluetooth.service
         sudo systemctl enable --now cups.service
         sudo systemctl enable --now cronie
+        sudo usermod -aG wireshark $(whoami)
         systemctl --user enable syncthing.service
         sudo grub-mkconfig -o /boot/grub/grub.cfg
     fi
