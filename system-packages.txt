@@ -21,6 +21,7 @@ kde-applications-meta
 kvantum
 libreoffice-fresh
 libreoffice-fresh-it
+librewolf-bin
 mangohud
 minecraft-launcher
 nextcloud-client
