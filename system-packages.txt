@@ -35,6 +35,7 @@ protonup-qt-bin
 puddletag
 qbittorrent
 rawtherapee
+rebuild-detector
 remmina
 rpi-imager
 sane
