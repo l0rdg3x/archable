@@ -3,7 +3,6 @@ bitwarden
 blanket
 bluez
 bluez-utils
-brave-bin
 cups
 discord
 dolphin-plugins
@@ -27,6 +26,7 @@ mangohud
 minecraft-launcher
 nextcloud-client
 nmap
+oneko
 opensc
 p7zip
 pacseek
